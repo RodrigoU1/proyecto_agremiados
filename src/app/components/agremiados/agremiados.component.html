@@ -1,0 +1,44 @@
+<app-header></app-header>
+  
+  <div class="container mt-5">
+    <div class="card shadow-lg p-4">
+      <h1 class="text-center mb-4">Agregar usuario</h1>
+  
+      <form [formGroup]="formAgremi">
+  
+        <div class="mb-3">
+          <div class="form-floating">
+            <input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder=" ">
+            <label for="nombre">Nombre</label>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <div class="form-floating">
+            <input formControlName="nue" type="text" class="form-control" id="nue" placeholder=" ">
+            <label for="nue">NUE</label>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <div class="form-floating">
+            <input formControlName="password" type="text" class="form-control" id="password" placeholder=" ">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <div class="form-floating">
+            <input formControlName="rol" type="text" class="form-control" id="rol" placeholder=" ">
+            <label for="rol">Rol</label>
+          </div>
+        </div>
+  
+        <div class="d-grid gap-2">
+          <button  type="button" class="btn btn-success"   style="background-color: rgb(66, 81, 245);">Guardar</button>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+  

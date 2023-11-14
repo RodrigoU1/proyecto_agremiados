@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Libros apartados</h2>
+  
+    <table class="table">
+      <thead>
+        <tr class="text-white">
+          <th scope="col" class="text-center">Nombre</th>
+          <th scope="col" class="text-center">Nue</th>
+          <th scope="col" class="text-center">Contraseña</th>
+          <th scope="col" class="text-center">Rol</th>
+          <th scope="col" class="text-center">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let agrem of agremis">
+          <tr>
+            <td class="text-center">{{ agrem.nombre }}</td>
+            <td class="text-center">{{ agrem.nue }}</td>
+            <td class="text-center">{{ agrem.password }}</td>
+            <td class="text-center">{{ agrem.rol }}</td>
+            <td class="text-center">
+              <button type="button" class="btn btn-danger" >Eliminar</button>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+  
